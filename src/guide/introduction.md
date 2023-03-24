@@ -4,14 +4,14 @@ Hello there Robloxian! Looking for a simple and easy way to interact with the Ro
 
 ## Installation
 
-Alright, let's get started, first we need to install the RobloxWrap package from the NPM registry:
+Alright, let's get started, first we need to install the RobloxWrap package from the NPM registry, run the following command in your terminal:
 
 ```bash
 npm i robloxwrap
 ```
 
 :::tip TIP
-Using it in multiple projects? Append a `-g` flag to install it globally, save the hassle of installing it every time.
+Using it in multiple projects? Append the `-g` flag to install it globally, save the hassle of installing it every time.
 :::
 
 Congrats, you've installed RobloxWrap! Now let's get started with the basics.
@@ -51,7 +51,7 @@ You won't need to worry about the `X-CSRF-TOKEN` as RobloxWrap will automaticall
 It is best practice to store your token in a environment file (`.env`), this way you can keep your token safe and not have to worry about it being leaked when editing your code or if you accidently commit your index file to a public repository. Use a package like [dotenv](https://npmjs.com/package/dotenv) to load your environment variables.
 :::
 
-**Updating our current code to authenticate:**
+### Updating our current code to login to Roblox
 
 Okay, let's add a Event Listener to our Client and authenticate with our cookie token:
 
@@ -91,9 +91,11 @@ Sometimes, you may encounter an error when trying to authenticate with your cook
 
 :::details TokenError
 This error is generic and only relates to `X-CSRF-TOKEN` generation.
-- `An unknown error occurred while generating a CSRF token`: Something went wrong while trying to generate the CSRF token used for querying endpoints, Roblox might be down. If you encounter this issue constantly, [click here](https://github.com/WaviestBalloon/RobloxWrap/issues/new) to open a new Issue on the GitHub repository and be sure to post the error message details.
+- `An unknown error occurred while generating a CSRF token`: Something went wrong while trying to generate the CSRF token used for querying endpoints, Roblox might be down.
 :::
 
 :::details ClientError
 This error is generic and relates to the Client class, for example, `Client.login` or internal issues. If you encounter this error, [click here](https://github.com/WaviestBalloon/RobloxWrap/issues/new) to open a new Issue on the GitHub repository.
 :::
+
+If you encounter any issues that are reoccurring and replicatable, [click here](https://github.com/WaviestBalloon/RobloxWrap/issues/new) to open a new Issue on the GitHub repository and be sure to post as much detail as possible. (Be sure not to include any sensitive information)

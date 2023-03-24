@@ -44,7 +44,7 @@ You won't need to worry about the `X-CSRF-TOKEN` as RobloxWrap will automaticall
 - Find the `.ROBLOSECURITY` cookie and copy the value
 
 :::warning SECURITY WARNING
-**Never share your `.ROBLOSECURITY` authentication token** or any other authentication token with anyone, it can be used to gain access to your account. If you think someone has your token, log out and then log back in to reset your tokens.
+**Never share your `.ROBLOSECURITY` authentication token** or any other form of token with anyone as it can be used to gain access to your account. If you think someone has your token, log out and then log back in to reset your tokens and as a extra precaution, change your password immediately.
 :::
 
 :::tip TIP

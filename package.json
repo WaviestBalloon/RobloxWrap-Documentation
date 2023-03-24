@@ -1,0 +1,19 @@
+{
+  "name": "robloxwrapdocs",
+  "version": "0.0.1",
+  "description": "Documentation for RobloxWrap",
+  "main": "index.js",
+  "authors": {
+    "name": "Waviest",
+    "email": "_@fur.dev"
+  },
+  "repository": "https://github.com/WaviestBalloon/RobloxWrap/robloxwrapdocs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

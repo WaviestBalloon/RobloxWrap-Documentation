@@ -44,7 +44,7 @@ module.exports = {
       {
         text: 'GitHub',
         link: 'https://github.com/WaviestBalloon/RobloxWrap'
-      }
+      },
     ],
     sidebar: {
       '/guide/': [

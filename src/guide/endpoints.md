@@ -96,10 +96,10 @@ getUserThumbnail(113260028, {
 Posts a shout to a group wall.
 
 ```javascript
-postShout(groupId: number, message: string)
+postShout(groupId: number, messageShout: string)
 ```
 :::tip TIP
-Setting the `message` argument to `null` will delete current group shout.
+Setting the `messageShout` argument to `null` will delete current group shout.
 :::
 
 :::details Example
@@ -113,7 +113,7 @@ postShout(116048183, "Hello, meow!")
 	filtered: false,
 	poster: {
 		username: 'WaviestBalloon',
-		displayname: null,
+		displayName: null,
 		description: "Hi, I'm Waviest, I'm a girl who loves all things computational. 🏳️‍⚧️👩‍💻\n" +
 		'You might know of me in the Sci-Fi community.\n' +
 		"Not everything I do is in Lua, I mainly code in JavaScript/TypeScript in Node.JS, I've started to learn Rust. I started playing on this platform since 2014-2015",

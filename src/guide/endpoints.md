@@ -22,7 +22,7 @@ Furthermore, if the argument is a `object` type you will see how it is formatted
 
 Takes a UserID as a number and returns a JSON object containing the user's profile details.
 
-```js
+```javascript
 getUserInfo(userId: number)
 ```
 
@@ -30,27 +30,27 @@ getUserInfo(userId: number)
 `displayname` will be `null` if the user has not set a display name.
 It is best practice to use a ternary operator to check if the user has a display name set, and if not, use their username instead, like so:
 
-```js
+```javascript
 const response = getUserInfo(113260028);
 console.log(displayname ? displayname : username);
 ```
 :::
 
 :::details Example
-```js
+```javascript
 getUserInfo(113260028)
 ```
 
 ```javascript
 {
 	username: 'WaviestBalloon',
-	displayname: null,
+	displayName: null,
 	description: "Hi, I'm Waviest, I'm a girl who loves all things computational. 🏳️‍⚧️👩‍💻\n"  +
 		'You might know of me in the Sci-Fi community.\n' +
 		"Not everything I do is in Lua, I mainly code in JavaScript/TypeScript in Node.JS, I've started to learn Rust. I started playing on this platform since 2014-2015",
 	avatarUrl: 'https://t6.rbxcdn.com/6a056e6626bec2ee3a741a49d7d91188',
 	userId: 113260028,
-	isRobloxBanned: false,
+	robloxBanned: false,
 	verified: false,
 	joinDate: '2016-03-06T16:16:31.557Z',
 	joinDateEpoch: 1457280991557
@@ -76,7 +76,7 @@ getUserThumbnail(userId: number, ?details: object)
 ```
 
 :::details Example
-```js
+```javascript
 getUserThumbnail(113260028, {
 	format: "png",
 	size: "420x420",
@@ -95,17 +95,38 @@ getUserThumbnail(113260028, {
 
 Posts a shout to a group wall.
 
-```js
+```javascript
 postShout(groupId: number, message: string)
 ```
+:::tip TIP
+Setting the `message` argument to `null` will delete current group shout.
+:::
 
 :::details Example
-```js
+```javascript
 postShout(116048183, "Hello, meow!")
 ```
 
 ```javascript
 {
-	"success": true
+	shout: 'Hello, Meow!',
+	filtered: false,
+	poster: {
+		username: 'WaviestBalloon',
+		displayname: null,
+		description: "Hi, I'm Waviest, I'm a girl who loves all things computational. 🏳️‍⚧️👩‍💻\n" +
+		'You might know of me in the Sci-Fi community.\n' +
+		"Not everything I do is in Lua, I mainly code in JavaScript/TypeScript in Node.JS, I've started to learn Rust. I started playing on this platform since 2014-2015",
+		avatarUrl: 'https://t6.rbxcdn.com/6a056e6626bec2ee3a741a49d7d91188',
+		userId: 113260028,
+		banned: false,
+		verified: false,
+		joinDate: '2016-03-06T16:16:31.557Z',
+		joinDateEpoch: 1457280991557
+	},
+	created: '2023-01-11T11:38:57.723Z',
+	createdEpoch: 1673437137723,
+	updated: '2023-03-25T00:24:59.3833877Z',
+	updatedEpoch: 1679703899383
 }
 ```

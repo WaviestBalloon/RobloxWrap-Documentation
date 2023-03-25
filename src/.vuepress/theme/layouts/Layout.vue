@@ -143,6 +143,6 @@
 <style>
   img.logo,
   .hero img {
-    border-radius: 50%;
+    border-radius: 0%;
   }
 </style>

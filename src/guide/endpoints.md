@@ -27,7 +27,7 @@ getUserInfo(userId: number)
 ```
 
 :::tip TIP
-`displayname` will be `null` if the user has not set a display name.
+`displayName` will be `null` if the user has not set a display name.
 It is best practice to use a ternary operator to check if the user has a display name set, and if not, use their username instead, like so:
 
 ```javascript

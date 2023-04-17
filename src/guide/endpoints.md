@@ -45,12 +45,13 @@ getUserInfo(113260028)
 {
 	username: 'WaviestBalloon',
 	displayName: null,
-	description: "Hi, I'm Waviest, I'm a girl who loves all things computational. 🏳️‍⚧️👩‍💻\n"  +
+	previousUsernames: [],
+	description: "Hi, I'm Waviest, I'm a girl who loves all things computational. 🏳️‍⚧️👩‍💻\n" +
 		'You might know of me in the Sci-Fi community.\n' +
 		"Not everything I do is in Lua, I mainly code in JavaScript/TypeScript in Node.JS, I've started to learn Rust. I started playing on this platform since 2014-2015",
-	avatarUrl: 'https://t6.rbxcdn.com/6a056e6626bec2ee3a741a49d7d91188',
+	avatarUrl: 'https://t4.rbxcdn.com/aec1839d24079d02ef48c0bb502bc153',
 	userId: 113260028,
-	robloxBanned: false,
+	banned: false,
 	verified: false,
 	joinDate: '2016-03-06T16:16:31.557Z',
 	joinDateEpoch: 1457280991557

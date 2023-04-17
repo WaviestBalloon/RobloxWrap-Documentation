@@ -21,6 +21,7 @@ Furthermore, if the argument is a `object` type you will see how it is formatted
 ### getUserInfo (🔓)
 
 Takes a UserID as a number and returns a JSON object containing the user's profile details.
+Past usernames are stored in an array, and the current username is stored in the `username` property, if the user has never had past usernames a empty array will be returned instead of `null`.
 
 ```javascript
 getUserInfo(userId: number)

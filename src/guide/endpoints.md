@@ -32,7 +32,7 @@ It is best practice to use a ternary operator to check if the user has a display
 
 ```javascript
 const response = getUserInfo(113260028);
-console.log(displayname ? displayname : username);
+console.log(displayName ? displayName : username);
 ```
 :::
 

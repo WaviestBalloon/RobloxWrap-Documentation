@@ -24,7 +24,7 @@ The first thing we need to do is create a Client, this is the main class that wi
 
 ```javascript
 const RobloxWrap = require("robloxwrap");
-const client = new RobloxWrap.Client();
+const client = new RobloxWrap();
 ```
 
 Now we have a Client instance, let's get started hook up a Event Listener and sign in.
@@ -57,7 +57,7 @@ Okay, let's add a Event Listener to our Client and authenticate with our cookie 
 
 ```javascript
 const RobloxWrap = require("robloxwrap");
-const client = new RobloxWrap.Client();
+const client = new RobloxWrap();
 
 client.on("authenticated", (response) => {
 	console.log("Hello, World! I am " + response.username + " (" + response.userId + ")");

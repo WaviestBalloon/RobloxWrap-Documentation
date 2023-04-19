@@ -35,12 +35,12 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        link: '/guide/',
+        link: '/guide/introduction.html',
       },
-      {
+      /*{
         text: 'Config',
         link: '/config/'
-      },
+      },*/
       {
         text: 'GitHub',
         link: 'https://github.com/WaviestBalloon/RobloxWrap'
@@ -54,6 +54,7 @@ module.exports = {
           children: [
             'introduction',
             'endpoints',
+            'exceptions',
           ]
         }
       ],

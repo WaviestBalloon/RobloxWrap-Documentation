@@ -32,8 +32,8 @@ getUserInfo(userId: number)
 It is best practice to use a ternary operator to check if the user has a display name set, and if not, use their username instead, like so:
 
 ```javascript
-const response = getUserInfo(113260028);
-console.log(displayName ? displayName : username);
+const user = getUserInfo(113260028);
+console.log(user.displayName ? user.displayName : user.username);
 ```
 :::
 

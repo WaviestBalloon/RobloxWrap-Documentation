@@ -59,7 +59,7 @@ Okay, let's add a Event Listener to our Client and authenticate with our cookie 
 const RobloxWrap = require("robloxwrap");
 const client = new RobloxWrap();
 
-client.on("authenticated", (response) => {
+client.on("authenticated", (response) => { // This will return UserProfile
 	console.log("Hello, World! I am " + response.username + " (" + response.userId + ")");
 });
 
